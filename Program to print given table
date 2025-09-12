@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int i,n,mul,m=5;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		mul=m*i;
+		printf("%d X %d=%d\n",m,i,mul);
+	}
+	return 0;
+}
+		
+		
