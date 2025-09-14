@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+	int n,d,num,sum=0;
+	scanf("%d",&n);
+	num=n;
+	while(n!=0){
+		d=n%10;
+		sum=sum+d*d*d;
+		n=n/10;	
+	}
+	if(sum==num){
+	   printf("It is a armstrong number");
+	}
+	else{
+		printf("It is not given not a given number ");
+	}
+	return 0;
+}
