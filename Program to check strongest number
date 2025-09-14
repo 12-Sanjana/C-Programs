@@ -1,0 +1,27 @@
+#include<stdio.h>
+int fact(int n)
+{
+    int f=1,i;
+    for(i=1;i<=n;i++)
+    f=f*i;
+    return f;
+}
+int main()
+{
+    int n,num,r,f,sum=0;
+    scanf("%d",&n);
+    num=n;
+    while(n!=0){
+    	r=n%10;
+    	f=fact(r);
+    	sum=sum+f;
+    	n=n/10;
+	}
+	if(sum==num){
+		printf("It is strongest number");
+	}
+	else{
+		printf("It is not a strongest number");
+	}
+    return 0;
+}
