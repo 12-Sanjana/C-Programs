@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int even=0,odd=0,zero=0,n,digit;
+	scanf("%d",&n);
+	if(n==0)
+	zero=1;
+    while(n>0){
+    	digit=n%10;
+    	if(digit==0)
+    	zero++;
+    	else if(digit%2==0)
+    	even++;
+    	else
+    	odd++;
+    	n=n/10;
+	}
+	printf("%d\n%d\n%d",zero,even,odd);
+	return 0;
+}
