@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int a,b,temp;//int a,b;
+	scanf("%d %d",&a,&b);
+	temp=a;//a=a*b or b=a+b; or a=a^b;
+	a=b;//b=a/b; or a=b-a; or b=a^b;
+	b=temp;//a=a/b; or b=b-a; or a=a^b;
+	printf("%d\n%d",a,b);
+	return 0;
+}
+
+
